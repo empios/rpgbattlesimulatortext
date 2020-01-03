@@ -50,7 +50,7 @@ while running:
         else:
             hero.takeManaCost(spellCost)
             enemy.takeDamage(magicdmg)
-            print("You deal:", magicdmg, "magic dmg with:", spell, "Enemy hp is:", enemy.getHp())
+            print("You deal:", magicdmg, "magic dmg with:", spell.name, "Enemy hp is:", enemy.getHp())
     elif index == 2:
         hero.chooseItem()
         itemSelect = int(input("Choose item:")) - 1
